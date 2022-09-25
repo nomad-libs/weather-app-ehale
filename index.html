@@ -16,9 +16,11 @@
   </head>
   <body>
     <br>
-    <br>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
+      <div class="overview"></div>
+
         <form class="search-form" id="search-form">
           <div class="row">
             <div class="col-6">
@@ -57,17 +59,20 @@
         </ul>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
-              <div class="float-left">
-                <span class="temperature" id="temperature">72</span
-                ><span class="units">°F</span>
-              </div>
-            </div>
+            <div class="d-flex weather-temperature">
+  <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" />
+  <div>
+    <strong id="temperature">66</strong>
+    <span class="units">°C | <a href="#"> °F</a></span>
+    </div>
+  </div>
+</div>
+  
           </div>
           <div class="col-6">
             <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
+              <li>Humidity: 12<span id="humidity"></span>%</li>
+              <li>Wind: 9 <span id="wind"></span> km/h</li>
             </ul>
           </div>
         </div>
@@ -81,12 +86,14 @@
           >
           by Libby Hale
         </small>
+        <br>
+          <br>
         <div class="container_days">
          <ul class="days-of-week">
-           <div class="col-3">Sunday<br> <div>⛈</div>️ 65</div>
-           <div class="col-3">Monday<br> <div>🌦</div> 65</div>
-           <div class="col-3">Tuesday<br> <div>🌤</div> 65</div>
-           <div class="col-3">Wednesday<br> <div>☀️</div> 65</div>
+           <div class="col-3"><br>Sunday<br> <div>⛈</div>️ 65</div>
+           <div class="col-3"><br>Monday<br> <div>🌦</div> 65</div>
+           <div class="col-3"><br>Tuesday<br> <div>🌤</div> 65</div>
+           <div class="col-3"><br>Wednesday<br> <div>☀️</div> 65</div>
            <div class="col-3"><br>Thursday<br> <div>🌦</div> 65</div>
            <div class="col-3"><br>Friday<br> <div>🌤</div> 65</div>
            <div class="col-3"><br>Saturday<br> <div>☀️</div> 65</div>
@@ -96,6 +103,9 @@
 
       </div>
     </div>
+  </div>
+  </footer>
     <script src="src/app.js"></script>
+
   </body>
 </html>
